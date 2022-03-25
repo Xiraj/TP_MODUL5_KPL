@@ -25,6 +25,12 @@ public class SayaTubeVideo {
 
     public void IncreasePlayCount(int x) {
         playCount ++;
+        try {
+            this.playCount += x;
+        }
+        catch (Exception exception) {
+            System.out.print(exception.toString());
+        }
     }
 
     public void PrintVideoDetails() {
